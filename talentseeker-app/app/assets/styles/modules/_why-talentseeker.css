@@ -1,0 +1,70 @@
+.why-talentseeker {
+
+    &__title {
+        font-size: 1.25rem;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+
+        @mixin atLarge {
+            font-size: 5rem;
+            max-width: 400px;
+            font-weight: 500;
+            text-align: left;
+        }
+        
+        &--bottom-border {
+            border-bottom: 8px solid #333;
+            max-width: 150px;
+            margin-top: -20px;
+            margin-bottom: 75px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @mixin atLarge {
+                margin-left: unset;
+                margin-right: unset;
+                max-width: 175px;
+            }
+        }
+    }
+
+    &__text-content {
+        line-height: 1.75;
+        letter-spacing: 1.75px;
+        font-size: 1.125rem;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        @mixin atSmall {
+            max-width: 400px;
+            font-size: 1.25rem;
+        }
+
+        @mixin atLarge {
+            max-width: 500px;
+            padding: 25px 0;
+            text-align: left;
+            margin-left: unset;
+            margin-right: unset;
+        }
+
+        &--border-bottom {
+            border-bottom: 3px solid #333;
+            max-width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+
+            @mixin atLarge {
+                margin-left: unset;
+                margin-right: unset;
+                margin-top: -25px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+}

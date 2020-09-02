@@ -1,0 +1,132 @@
+.menu {
+    height: 75px;
+    width: 100%;
+    text-align: center;
+
+    @mixin atLarge {
+        text-align: unset;
+    }
+
+    &__navbar {
+        display: none;
+        position: absolute;
+        z-index: 3;
+
+        @mixin atLarge {
+            display: inline;
+            position: unset;
+            z-index: unset;
+            float: right;
+            margin-right: 25px;
+            margin-top: 30px;
+        }
+        
+        &--background {
+
+            &--is-visible {
+                width: 100%;
+                height: 0;
+                background-color: rgba($menuRed, 0.95);
+            }    
+        }
+
+
+        &--is-visible {
+            display: block;
+        }
+
+        &--links {
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            text-decoration: none;
+            text-align: center;
+            color: #FFF;
+            padding: 25px 0;
+            border-bottom: 1px solid #FFF;
+            transition: visibility 0s, opacity 0.625s ease-in;
+
+            &--is-visible {
+                visibility: visible;
+                opacity: 1;
+                
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            @mixin atLarge {
+                display: inline;
+                color: #333;
+                visibility: visible;
+                opacity: 1;
+                border-bottom: none;
+                font-size: 1.1rem;
+                margin-left: 25px;
+            }
+        }
+    }
+
+    &__menu-icon {
+        width: 25px;
+        height: 19px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 3px;
+            background-color: $mainRed;
+            transform-origin: 0 0;
+            transition: transform 0.3s ease-out;
+        }
+
+        &__middle {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 25px;
+            height: 3px;
+            background-color: $mainRed;
+            transition: all 0.3s ease-out;
+            transform-origin: 0 50%;
+        }
+
+        &::after {
+            content:  "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 25px;
+            height: 3px;
+            background-color: $mainRed;
+            transform-origin: 0 100%;
+            transition: transform 0.3s ease-out;
+        }
+
+        @mixin atLarge {
+            display: none;
+        }
+    }
+
+    &__menu-icon--close-x {
+        &::before {
+            transform: rotate(45deg) scaleX(1.25) translateY(-3px);
+        }
+
+        .menu__menu-icon__middle {
+            opacity: 0;
+            transform: scaleX(0)
+        }
+
+        &::after {
+            transform: rotate(-45deg) scaleX(1.25) translateY(4px);
+        }
+    }
+}

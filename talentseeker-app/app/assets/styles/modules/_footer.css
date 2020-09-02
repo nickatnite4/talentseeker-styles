@@ -1,0 +1,58 @@
+.footer {
+    border-top: 5px solid $mainRed;
+
+    &__img {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    &__links {
+        text-align: center;
+        margin-top: 30px;
+
+        &--link {
+            font-size: 0.875rem;
+            text-decoration: none;
+            color: $mainRed;
+            letter-spacing: 1.2px;
+
+            @mixin atSmall {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__contact-info {
+        text-align: center;
+        margin-left: -160px;
+        margin-top: 25px;
+
+        &--email {
+            margin-left: 150px;
+
+            &--text {
+                font-size: 0.9rem;
+                margin-left: 15px;
+                display: inline;
+                color: $mainRed;
+                position: absolute;
+                transform: translateY(-40%);
+            }
+        }
+
+        &--text {
+            font-size: 0.9rem;
+            display: inline;
+            color: $mainRed;
+            position: absolute;
+            transform: translateY(-50%);
+            margin-left: 15px;
+        }
+    }
+
+    &__copyright {
+        color: $mainRed;
+        font-size: 0.625rem;
+        text-align: center;
+    }
+}

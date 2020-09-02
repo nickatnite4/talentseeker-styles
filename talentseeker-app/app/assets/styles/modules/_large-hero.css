@@ -1,0 +1,17 @@
+.large-hero {
+    position: relative;
+    border-bottom: 5px solid $mainRed;
+
+    img {
+        display: block;
+    }
+
+    &__btn-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+}

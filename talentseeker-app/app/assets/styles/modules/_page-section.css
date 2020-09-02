@@ -1,0 +1,11 @@
+.page-section {
+    margin-top: 2.5rem;
+
+    @mixin atMedium {
+        margin-top: 5rem;
+    }
+
+    &--concentration {
+        margin-top: 8rem;
+    }
+}

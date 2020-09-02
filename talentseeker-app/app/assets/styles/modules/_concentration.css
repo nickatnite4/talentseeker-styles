@@ -1,0 +1,49 @@
+.concentration {
+    background-color: $mainRed;
+
+    &__title {
+        padding-top: 25px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        color: #FFF;
+        font-size: 2.5rem;
+        
+        @mixin atMedium {
+            font-size: 3.5rem;
+        }
+
+        &--border-bottom {
+            border-bottom: 10px solid #FFF;
+            margin-top: -15px;
+            width: 100px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__features {
+        background-color: #969696;
+        margin-bottom: 65px;
+        padding: 10px 0;
+        border-radius: 5px;
+        text-shadow: 1px 1px #333;
+
+        &--title {
+            display: inline;
+            position: absolute;
+            color: #FFF;
+            font-weight: 300;
+            transform: translateY(-30%);
+            margin-left: 25px;
+            font-size: 2rem;
+
+            @mixin atSmall {
+                font-size: 2.5rem;
+                transform: translateY(-55%);
+            }
+        }
+
+        &--img {
+            margin-left: 20px;
+        }
+    }
+}
