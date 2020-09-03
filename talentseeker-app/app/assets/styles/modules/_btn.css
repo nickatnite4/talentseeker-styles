@@ -34,4 +34,37 @@
             background-color: rgba($hoverRed, 0.85);
         }
     }
+
+    &--quick-links {
+        background-color: #FFF;
+        border-radius: 2px;
+        color: $mainRed;
+        border: 1px solid $mainRed;
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 1.25rem;
+
+        &:hover {
+            background-color: rgba($mainRed, 0.9);
+            color: #FFF;
+        }
+    }
+
+    &--form-submit {
+        text-decoration: none;
+        border: none;
+        background-color: $mainRed;
+        padding: 10px 0px;
+        color: #FFF;
+        letter-spacing: 1.2px;
+        width: 100%;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: $hoverRed;
+        }
+
+    }
 }

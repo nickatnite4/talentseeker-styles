@@ -6,33 +6,54 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
-        <script src='./bundled.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         
         <header>
-            <a href="./index.html"><img src="./assets/images/company-logo-resized.jpg" alt="company-logo"></a>
-            <a href="./index.html">Home</a>         
-            <a href="./about.html">About</a>
-            <a href="./employer.html">Employer</a>   
-            <a href="./job-seeker.html">Job Seekers</a>
-            <a href="./contact-us.html">Contact Us</a>
+            <div class="menu">
+                <a href="./index.html"><img src="./assets/images/company-logo-resized.jpg" alt="company-logo"></a>
+                <div class="menu__menu-icon">
+                    <div class="menu__menu-icon__middle"></div>
+                </div>
+                <div class="menu__navbar menu__navbar--background">
+                    <a class="menu__navbar--links" href="./index.html">Home</a>         
+                    <a class="menu__navbar--links" href="./about.html">About</a>
+                    <a class="menu__navbar--links" href="./employer.html">Employer</a>
+                    <a class="menu__navbar--links" href="./job-seeker.html">Job Seekers</a>
+                    <a class="menu__navbar--links" href="./process.html">Our Process</a>
+                    <a class="menu__navbar--links" href="./contact-us.html">Contact Us</a>
+                </div>
+            </div>
         </header>
 
         <h1>Our Process</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-        <footer>
-            <img src="./assets/images/company-logo-resized.jpg" alt="company-logo"><br></br>                 
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./employer.html">Employer</a>
-            <a href="./job-seekers.html">Job Seekers</a>
-            <a href="./contact-us.html">Contact Us</a>
-            <img src="./assets/images/phone-small.JPG">
-            <p>XXX-XXX-XXXX</p>
-            <img src="./assets/images/email-small.JPG">
-            <p>XXXX@XXXXXX.com</p>
-            <p>© 2020 Talent Seeker</p>
+        <footer class="footer">
+            <div class="footer__img">
+                <img src="./assets/images/company-logo-resized.jpg" alt="company-logo">
+            </div>
+            
+            <div class="footer__links">
+                <a class="footer__links--link" href="./index.html">Home |</a>
+                <a class="footer__links--link" href="./about.html">About |</a>
+                <a class="footer__links--link" href="./employer.html">Employer |</a>
+                <a class="footer__links--link" href="./job-seekers.html">Job Seekers |</a>
+                <a class="footer__links--link" href="./process.html">Our Process |</a>  
+                <a class="footer__links--link" href="./contact-us.html">Contact Us</a>
+            </div>                 
+
+            <div class="footer__contact-info">
+                <img src="./assets/images/phone-small.JPG">
+                <p class="footer__contact-info--text">XXX-XXX-XXXX</p>
+                <img class="footer__contact-info--email" src="./assets/images/email-small.JPG">
+                <p class="footer__contact-info--email--text">XXXX@XXXXXX.com</p>
+            </div>
+            <p class="footer__copyright">© 2020 Talent Seeker</p>
         </footer>
 </body>
 </html>

@@ -1,0 +1,23 @@
+.about-us {
+
+
+    &__section-heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+
+        @mixin atMedium {
+            font-size: 3rem;
+        }
+    }
+
+    &__section-content {
+        font-size: 1rem;
+        font-weight: 350;
+        line-height: 1.5;
+
+        @mixin atMedium {
+            font-size: 1.125rem;
+            line-height: 2;
+        }
+    }
+}

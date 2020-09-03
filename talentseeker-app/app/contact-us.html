@@ -11,37 +11,62 @@
     <body>
         
         <header>
-            <a href="./index.html"><img src="./assets/images/company-logo-resized.jpg" alt="company-logo"></a>
-            <a href="./index.html">Home</a>         
-            <a href="./about.html">About</a>
-            <a href="./employer.html">Employer</a>   
-            <a href="./job-seeker.html">Job Seekers</a>
-            <a href="./contact-us.html">Contact Us</a>
+            <div class="menu">
+                <a href="./index.html"><img src="./assets/images/company-logo-resized.jpg" alt="company-logo"></a>
+                <div class="menu__menu-icon">
+                    <div class="menu__menu-icon__middle"></div>
+                </div>
+                <div class="menu__navbar menu__navbar--background">
+                    <a class="menu__navbar--links" href="./index.html">Home</a>         
+                    <a class="menu__navbar--links" href="./about.html">About</a>
+                    <a class="menu__navbar--links" href="./employer.html">Employer</a>
+                    <a class="menu__navbar--links" href="./job-seeker.html">Job Seekers</a>
+                    <a class="menu__navbar--links" href="./process.html">Our Process</a>
+                    <a class="menu__navbar--links" href="./contact-us.html">Contact Us</a>
+                </div>
+            </div>
         </header>
 
-        <picture>
-            <source srcset="./assets/images/chicago-medium.jpg 1280w, ./assets/images/chicago-large.jpg 1920w, ./assets/images/chicago-large-hi-dpi.jpg 2200w" media="(min-width: 640px)">
-            <img src="./assets/images/chicago-small.jpg">
-        </picture>
+        <div class="large-hero">
+            <picture>
+                <source srcset="./assets/images/chicago-large-hi-dpi.jpg" media="(min-width: 1380px)">
+                <source srcset="./assets/images/chicago-large.jpg" media="(min-width: 990px)">
+                <source srcset="./assets/images/chicago-medium.jpg" media="(min-width: 640px)">
+                <img src="./assets/images/chicago-small.jpg">
+            </picture>
+        </div>
 
-        <h1>Contact Us</h1>
-        <p>Reach us at one of the links below or call <strong>XXX-XXX-XXXX</strong></p>
-        <a href="./job-seeker.html">Job Seekers</a>
-        <a href="./employer.html">Find Talent</a>
+        <div class="page-section"></div>
+        <div class="wrapper">
+            <h1 class="about-us__section-heading">Contact Us</h1>
+            <p class="about-us__section-content">Reach us at one of the links below or call <strong>XXX-XXX-XXXX</strong></p>
+            <a class="btn btn--quick-links" href="./job-seeker.html">Job Seekers</a>
+            <a class="btn btn--quick-links" href="./employer.html">Find Talent</a>
+        </div>
+
  
+        <div class="page-section"></div>
+        <footer class="footer">
+            <div class="footer__img">
+                <img src="./assets/images/company-logo-resized.jpg" alt="company-logo">
+            </div>
+            
+            <div class="footer__links">
+                <a class="footer__links--link" href="./index.html">Home |</a>
+                <a class="footer__links--link" href="./about.html">About |</a>
+                <a class="footer__links--link" href="./employer.html">Employer |</a>
+                <a class="footer__links--link" href="./job-seekers.html">Job Seekers |</a>
+                <a class="footer__links--link" href="./process.html">Our Process |</a>  
+                <a class="footer__links--link" href="./contact-us.html">Contact Us</a>
+            </div>                 
 
-        <footer>
-            <img src="./assets/images/company-logo-resized.jpg" alt="company-logo"><br></br>                 
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./employer.html">Employer</a>
-            <a href="./job-seekers.html">Job Seekers</a>
-            <a href="./contact-us.html">Contact Us</a>
-            <img src="./assets/images/phone-small.JPG">
-            <p>XXX-XXX-XXXX</p>
-            <img src="./assets/images/email-small.JPG">
-            <p>XXXX@XXXXXX.com</p>
-            <p>© 2020 Talent Seeker</p>
+            <div class="footer__contact-info">
+                <img src="./assets/images/phone-small.JPG">
+                <p class="footer__contact-info--text">XXX-XXX-XXXX</p>
+                <img class="footer__contact-info--email" src="./assets/images/email-small.JPG">
+                <p class="footer__contact-info--email--text">XXXX@XXXXXX.com</p>
+            </div>
+            <p class="footer__copyright">© 2020 Talent Seeker</p>
         </footer>
 </body>
 </html>
